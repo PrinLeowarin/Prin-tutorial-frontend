@@ -82,7 +82,7 @@ jobs:
       environment: 
         name: dev
         url: https://github.com/PrinLeowarn/prin-tutorial-pipeline/actions/workflows/dev-tutorial-backend-deploy.yml
-        needs: [unitest,analyze] # if on env sit don't use
+      needs: [unitest,analyze] # if on env sit don't use
   
   
       steps:
