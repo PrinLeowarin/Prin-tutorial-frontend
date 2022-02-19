@@ -5,7 +5,6 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  p
     branches: [ develop ]
   pull_request:
     branches: [ dovelop]
@@ -35,4 +34,4 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           ls -al
-          
+
