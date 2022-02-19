@@ -40,7 +40,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: Unit Test Results
-        path: '${{ github.workspace }}/report.html'
+        path: '${{ github.workspace }}/coverage/lcov-report/*'
 
 
 
