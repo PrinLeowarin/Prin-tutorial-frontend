@@ -12,7 +12,7 @@ on:
 
 env:
   APP_NAME: prin-tutorial-frontend
-  CONTAINER_REPOSITORY: "acrprintutorial001.azurecr.io"
+  CONTAINER_REPOSITORY: arcprintutorial001.azurecr.io
   IMAGE_TAG: "0.0.1-SNAPSHOT"
 
 jobs:
@@ -103,7 +103,6 @@ jobs:
             login-server: ${{ env.CONTAINER_REPOSITORY }}
             username: ${{ secrets.ACR_USERNAME }}
             password: ${{ secrets.ACR_PASSWORD }}
-
 
         - name: Push image
           run: docker image push ${{ env.CONTAINER_REPOSITORY }}/${{ env.APP_NAME }}:${{env.IMAGE_TAG}}
